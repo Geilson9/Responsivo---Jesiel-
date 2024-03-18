@@ -2,13 +2,21 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 body{
+    background-image: linear-gradient(to bottom, rgb(0, 255, 13), rgb(0, 0, 0));
     margin: 0%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+
+
+    }
+
 
 
 header, footer{
@@ -20,18 +28,106 @@ main{
     padding: 10px 0;
     gap: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 main div{
-    width: 33%;
-    background-color: orange;
+    width: 30%;
+    background-image: linear-gradient(to bottom, rgb(141, 255, 124), rgb(17, 255, 0));
     height: 100%;
 }
 
 header{
-    background-color: blueviolet;
+    background-image: linear-gradient(to right, rgb(13, 95, 0), #3cff00);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    
+    
 }
 
 footer{
-    background-color: brown;
+    background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(13, 95, 0));
 }
+
+.div1{
+    border-radius: 20px;
+}
+
+.meta{
+border-radius: 30px;
+text-align: center;
+padding: 20px;
+}
+
+.titulo1{
+    font-family: cursive;
+    text-align: center;
+}
+
+.texto1{
+    padding: 10px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.div2{
+    border-radius: 20px;
+}
+
+.programacao{ 
+border-radius: 30px;
+text-align: center;
+padding: 20px;
+}
+
+.titulo2{
+    font-family: cursive;
+    text-align: center;
+}
+.texto2{
+    padding: 10px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.div3{
+    border-radius: 20px;
+}
+
+.escolhas{
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo3{
+    font-family: cursive;
+    text-align: center;
+}
+
+.texto3{
+    padding: 10px;
+    font-family: cursive;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+   main{
+    height: auto;
+   }
+   main div{
+    width: 45%;
+    height: 100vh;
+   }
+}
+@media (max-width: 576px){
+
+    main div{
+        width: 98%;
+    }
+}
+
